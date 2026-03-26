@@ -4,7 +4,9 @@ import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
 const isProduction = true;
-const BASE_URL = isProduction ? "deployment-url" : "http://localhost:5000";
+const BASE_URL = isProduction
+  ? "https://linkup-6cql.onrender.com"
+  : "http://localhost:5000";
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
