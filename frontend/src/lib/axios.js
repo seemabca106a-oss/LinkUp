@@ -2,7 +2,7 @@ import axios from "axios";
 
 const isProduction = true;
 const baseURL = isProduction
-  ? "deployment-url/api"
+  ? "https://linkup-6cql.onrender.com"
   : "http://localhost:5000/api";
 
 export const axiosInstance = axios.create({
